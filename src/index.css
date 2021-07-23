@@ -1,0 +1,32 @@
+body {
+    margin: 0;
+}
+nav {
+    padding: 0 1rem;
+}
+.content {
+    min-height: calc(100vh -  70px - 64px);
+    padding: 1.5rem 0;
+}
+.movies {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 1rem;
+    gap: 1rem;
+
+} 
+.search-btn { 
+    position: absolute;
+    right: 0;
+    bottom: 5px;
+    border-radius: 6px;
+}
+[type="radio"].with-gap:checked+span:before {
+    border: 2px solid #7e57c2
+}
+[type="radio"].with-gap:checked+span:after {
+    background-color: #7e57c2
+}
+label:not(:last-child) {
+    margin-right: 1rem;
+}
